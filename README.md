@@ -24,6 +24,9 @@ export MOODLE_DOCKER_WWWROOT=/path/to/moodle/code
 # Choose a db server (Currently supported: pgsql, mariadb, mysql, mssql, oracle)
 export MOODLE_DOCKER_DB=pgsql
 
+# Set up XDebug
+export XDEBUG_IP_ADDRESS = 127.0.0.1
+
 # Ensure customized config.php for the Docker containers is in place
 cp config.docker-template.php $MOODLE_DOCKER_WWWROOT/config.php
 
